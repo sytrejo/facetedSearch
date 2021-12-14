@@ -7,9 +7,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/11e8571af7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/style.css">
-
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>MCU Movie Reccomendations</title>
 </head>
 
@@ -26,37 +25,34 @@
         <!-- search form -->
         <form id="search-form" role="search" class="d-flex align-items-center mb-3">
           <input type="search" class="form-control" id="search-input" placeholder="Search">
-          <button type="submit" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
+          <button onclick="filteredSearch()" type="submit" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
         </form>
 
         <!-- search history -->
         <div id="search-history" class="btn-group-vertical w-100 justify-content-start history-scrollable"></div>
         
         <div class="Facets" id="facets"> <!--The Search Criteria-->
-            <!-- <div class="Time">
-                <h3>Chronological or Release Date</h3>
-                <select name="Criteria0" id="Criteria0">
-                    <option value="option1">Chronological</option>
-                    <option value="option2">Release Date</option>
-                </select>
-            </div>
-            
-            <div class="Criteria1">
-                <h1>Criteria1</h1>
-                <select name="Criteria1" id="Criteria1">
-                    <option value="option1">option 1</option>
-                    <option value="option2">option 2</option>
-                    <option value="option3">option 3</option>
-                    <option value="option4">option 4</option>
-                </select>
-            </div>  --> 
+          <div>
+            <h3>Viewing Style:</h3>
+            <label>
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Chronological</label>
+            <label>
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Release Date</label>
+          </div>
 
-            <div class="Time">
-                <h3>Viewing Style</h3>
-                <input type="checkbox" id="Chronological" value="Chronological"><label for="Chronological"> Chronological Order</label><br>
-                <input type="checkbox" id="Release" value="Release"><label for="Release"> Date of Release</label><br>
-            </div>
 
+            <!-- <div class = "Time">
+                <form name="selectFormTime">
+                    <p>
+                      <label for="WatchingType">Chronological or Release</label>
+                      <select id="watchingType" name="watchingType">
+                        <option selected="selected">Chronological Order</option>
+                        <option>Release Date</option>
+                      </select>
+                    </p>
+                    <p><input id="btn" type="button" value="Enter" /></p>
+                  </form>
+            </div> -->
             <div class="Characters">
                 <!-- Used this article that ranks the top characters for the selection https://screenrant.com/ten-best-characters-mcu-according-ranker/ -->
                 <h3>Characters</h3>
@@ -88,23 +84,11 @@
     <main class="main">
         <div class="container-fluid">
             <div class="row">
-                <div class="col" id="Poster1">
-                    <h3>Poster1</h3>
-                </div>
-
-                <div class="col" id="Poster2">
-                    <h3>Poster2</h3>
-                </div>
-
-                <div class="col" id="Poster3">
-                    <h3>Poster3</h3>
-                </div>
-
-                <div class= "col" id="Poster4">
-                    <h3>Poster4</h3>
-                </div>
+            
             </div>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
