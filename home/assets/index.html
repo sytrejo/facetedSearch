@@ -25,56 +25,57 @@
         <!-- search form -->
         <form id="search-form" role="search" class="d-flex align-items-center mb-3">
           <input type="search" class="form-control" id="search-input" placeholder="Search">
-          <button onclick="filteredSearch()" type="submit" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
+          <button onclick="filteredSearch()" type="button" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
         </form>
 
-        <!-- search history -->
-        <div id="search-history" class="btn-group-vertical w-100 justify-content-start history-scrollable"></div>
-        
+   
         <div class="Facets" id="facets"> <!--The Search Criteria-->
           <div>
-            <h3>Viewing Style:</h3>
+            <h3>Viewing By Timeline:</h3>
             <label>
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Chronological</label>
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Chronological</label></br>
             <label>
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Release Date</label>
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Release Date</label></br>
           </div>
 
 
-            <!-- <div class = "Time">
-                <form name="selectFormTime">
-                    <p>
-                      <label for="WatchingType">Chronological or Release</label>
-                      <select id="watchingType" name="watchingType">
-                        <option selected="selected">Chronological Order</option>
-                        <option>Release Date</option>
-                      </select>
-                    </p>
-                    <p><input id="btn" type="button" value="Enter" /></p>
-                  </form>
-            </div> -->
             <div class="Characters">
                 <!-- Used this article that ranks the top characters for the selection https://screenrant.com/ten-best-characters-mcu-according-ranker/ -->
-                <h3>Characters</h3>
-                <input type="checkbox" id="blackPanther" value="blackPanther"><label for="blackPanther"> Black Pather</label><br>
-                <input type="checkbox" id="rocketRaccoon" value="rocketRaccoon"><label for="rocketRaccoon"> Rocket Raccoon</label><br>
-                <input type="checkbox" id="blackWidow" value="blackWidow"><label for="blackWidow"> Black Widow</label><br>
-                <input type="checkbox" id="doctorStrange" value="doctorStrange"><label for="doctorStrange"> Doctor Strange</label><br>
-                <input type="checkbox" id="stanLee" value="stanLee"><label for="stanLee"> Stan Lee</label><br>
-                <input type="checkbox" id="spiderMan" value="spiderMan"><label for="spiderMan"> Spider-Man</label><br>
-                <input type="checkbox" id="captainAmerica" value="captainAmerica"><label for="captainAmerica"> Captain America</label><br>
-                <input type="checkbox" id="loki" value="loki"><label for="loki"> Loki</label><br>
-                <input type="checkbox" id="thor" value="thor"><label for="thor">Thor</label><br>
-                <input type="checkbox" id="ironMan" value="ironMan"><label for="ironMan"> Iron Man</label><br>
+                <h3>Viewing By Characters</h3>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Black Panther</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Rocket Racoon</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Black Widow</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Doctor Strange</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Stan Lee</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Spider-Man</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Captain America</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Thor</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Iron Man</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Loki</label></br>
             </div>
+            
 
             <div class="Duration">
                 <!-- Here is the official runtimes of each movie https://screenrant.com/mcu-length-marvel-movies-total-runtime/ -->
-                <h3>Max Duration</h3>
-                <input type="checkbox" id="twohours" value="twohours"><label for="twohours">2 hours</label><br>
-                <input type="checkbox" id="twohours20min" value="twohours20min"><label for="twohours20min"> 2 hours and 20 min.</label><br>
-                <input type="checkbox" id="twohours40min" value="twohours40min"><label for="twohours40min"> 2 hours and 40 min.</label><br>
-                <input type="checkbox" id="threeHours" value="threeHours"><label for="threeHours"> 3 hours </label><br>
+                <h3>Viewing By Max Duration</h3>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> 2 hours</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> 2 hours and 20 min</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> 2 hours and 40 min</label></br>
+                <label>
+                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />3 hours or more</label></br>
             </div>
 
         </div>
@@ -84,7 +85,7 @@
     <main class="main">
         <div class="container-fluid">
             <div class="row">
-            
+          
             </div>
         </div>
     </main>

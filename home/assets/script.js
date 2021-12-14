@@ -16,16 +16,16 @@
 // getApi(requestUrl);
 
 // I used this article for the realease list. I did NOT include tv series. We can add them later if we want. https://www.gamesradar.com/how-to-watch-marvel-movies-in-order-mcu/
-// function check(isRelease){
+// function isRelease(){
 //     var MCUChronological = ['Captain America: The First Avenger', 'Captain Marvel', 'Iron Man', 'Iron Man 2','The Incredible Hulk','Thor','The Avengers','Iron Man 3','Thor:The Dark World','Captain America: The Winter Soldier','Guardians of the Galaxy','Guardians of the Galaxy 2','Avengers: Age of Ultron','Ant-Man','Captain America: Civil War','Spider-Man:Homecoming','Doctor Strange','Black Widow', 'Black Panther','Thor: Ragnarok','Ant-Man and the Wasp','Avengers:Infinity War','Avengers:Endgame','Shang-Chi and The Legend of the Ten Rings','Spider-Man: Far from Home','Eternals'];
 //     var MCUrelease =['Iron Man', 'Avengers: Age of Ultron', 'Ant-Man', 'Captain America:Civil War','Doctor Strange','Guardians of the Galaxy','Spider-Man: Homecoming','Thor:Ragnarok','Black Panthar','Avengers: Infinity War', 'Ant-Man and the Wasp','Captain Marvel', 'Avengers:Endgame','Spider-Man: Far From Home', 'Black Widow','Shang-Chi and the Legend of the Ten Rings','Eternals','Spider-Man: No Way Home'];
 //     return isRelease ? MCUrelease : MCUChronological;
 //     console.log(isRelease);
-//     // document.getElementById("Chronological").checked = true;
-//     // console.log(MCUChronological);
-//     // document.getElementById("Release").checked = true;
-//     // console.log(MCUrelease);
-// };
+    // document.getElementById("Chronological").checked = true;
+    // console.log(MCUChronological);
+    // document.getElementById("Release").checked = true;
+    // console.log(MCUrelease);
+};
 
 
 // $("#form").submit(function (e) {
@@ -65,7 +65,7 @@ $("input:checkbox").on('click', function() {
     }
   });
 
-  
+
 
 
 
